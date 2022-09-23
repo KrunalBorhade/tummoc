@@ -21,15 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      {user ? <Logout /> : <Login />}
-      <h1>Login with Google</h1>
-      <GoogleLogin
-    clientId="675697374252-vb1g8nji1fda475m7a0gboq9je1pneo3.apps.googleusercontent.com"
-    buttonText="Login with Google"
-    onSuccess={responseGoogle}
-    onFailure={responseGoogle}
-    cookiePolicy={'single_host_origin'}
-  />,
+      {user ? <Logout /> : <Login /> }
     </div>
   );
 }
